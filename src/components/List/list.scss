@@ -1,0 +1,27 @@
+@import 'src/styles/vars';
+
+.task {
+  border-radius: .3em;
+  background-color: $taskBackgroundColor;
+  border: 1px solid $borderTaskColor;
+  margin-bottom: .3em;
+  padding: .6em;
+
+  &-label {
+    margin-left: .5em;
+  }
+  
+  &--done {
+    text-decoration: line-through;
+    opacity: .5;
+  }
+  &--fav {
+    background-color: #E0C600;
+    border-color: darken(#E0C600, 10%);
+  }
+  &-fav, &-trash {
+    float: right;
+    margin: 0 .5em;
+    cursor: pointer;
+  }
+}
